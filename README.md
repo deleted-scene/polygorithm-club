@@ -1,2 +1,2 @@
-# (sek) Raki
-(Functional) Algorithms and Data Structures in C# | Scala
+# Ployglot Algorithm Club
+(Functional) Algorithms and Data Structures in C# / Scala
