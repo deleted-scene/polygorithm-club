@@ -1,14 +1,14 @@
 import scala.reflect.ClassTag
 
 case class ResizingArrayStack[T : ClassTag](){
-
+  
   private var array: Array[T] = Array.ofDim[T](2)
-  private var N:Int          = 0
+  private var N:Int           = 0
 
-  def isEmpty(): Boolean = N ==  0
-  def size (): Integer   = N
+  def isEmpty(): Boolean      = N ==  0
+  def size (): Integer        = N
 
-  def resize(capacity: Int) = {
+  private def _resize(capacity: Int) = {
     assert(capacity > N)
 
     val temp = Array.ofDim[T](capacity)
@@ -16,8 +16,8 @@ case class ResizingArrayStack[T : ClassTag](){
     array = temp
   }
 
-  def push(item: T): Unit ={
-    if (array.length == N) resize( 2 * array.length)
+  def push(item: T): Unit = {
+    if (array.length == N) _resize( 2 * array.length)
 
     array(N) = item
     N += 1
@@ -32,9 +32,9 @@ case class ResizingArrayStack[T : ClassTag](){
 
     N -= 1
     //resize if necessary
-    if(N > 0  && N == array.length /4 ) resize(array.length /4 )
+    if(N > 0  && N == array.length / 4 ) _resize(array.length / 4 )
 
     item
   }
-
+  
 }
