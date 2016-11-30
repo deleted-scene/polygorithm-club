@@ -38,9 +38,9 @@ case class ResizingArrayStack[T: ClassTag]() extends Iterable[T] {
 
   override def isEmpty(): Boolean = N == 0
 
-  override def iterator: Iterator[T] = new ResizableArrayStackIterator()
+  override def iterator: Iterator[T] = new ResizingArrayStackIterator()
 
-  private class ResizableArrayStackIterator extends Iterator[T] {
+  private class ResizingArrayStackIterator extends Iterator[T] {
     private var i = N
 
     override def next(): T = {
