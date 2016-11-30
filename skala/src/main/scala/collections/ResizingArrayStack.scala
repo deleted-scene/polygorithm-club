@@ -1,3 +1,5 @@
+package collections
+
 import scala.reflect.ClassTag
 
 case class ResizingArrayStack[T: ClassTag]() extends Iterable[T] {

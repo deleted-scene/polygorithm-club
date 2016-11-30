@@ -1,3 +1,4 @@
+import collections.ResizingArrayStack
 import org.scalatest._
 
 class ResizingArrayStackTest extends FlatSpec with Matchers {
