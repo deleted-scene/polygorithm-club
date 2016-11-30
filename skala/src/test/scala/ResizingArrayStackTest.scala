@@ -18,4 +18,19 @@ class ResizingArrayStackTest extends FlatSpec with Matchers {
     }
   }
 
+  it should "implement iterator to iterate over values in last-in-first-out order" in {
+    val stack = new ResizingArrayStack[Int]
+    stack.push(56)
+    stack.push(66)
+
+    val it = stack.iterator
+    var i = 0
+    while (it.hasNext) {
+      println(it.next())
+      i += 1
+    }
+
+    i should be(2)
+  }
+
 }
