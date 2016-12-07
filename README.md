@@ -9,6 +9,7 @@ Algorithms and Data Structures in C# | Scala | C++
 |  ➟ _ResizingArrayStack_        |       |[code](https://github.com/ziyasal/polygorithm-club/blob/master/skala/src/main/scala/collections/ResizingArrayStack.scala#L3)       |       |
 |  ➟ _LinkedListStack_           |       |       |       |
 |**Queue**                        |       |       |       |
+|  ➟ _ResizingArrayQueue_        |       |[code](https://github.com/ziyasal/polygorithm-club/blob/master/skala/src/main/scala/collections/ResizingArrayQueue.scala#L3)       |       |
 |  ➟ _PriorityQueue_             |       |       |       |
 |  ➟ _OrderedPriorityQueue_      |       |       |       |
 |  ➟ _DoubleEndedQueue_          |       |       |       |
