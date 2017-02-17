@@ -25,7 +25,7 @@ case class ResizingArrayStack[T: ClassTag]() extends Iterable[T] {
 
     N -= 1
     //resize if necessary
-    if (N > 0 && N == array.length / 4) _resize(array.length / 4)
+    if (N > 0 && N == array.length / 4) _resize(array.length / 2)
 
     item
   }
