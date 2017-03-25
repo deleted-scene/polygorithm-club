@@ -13,7 +13,7 @@ package collections
  */
 class HEntry[T, K](val key: T, val value: K)
 
-class HashTable[T, K]() {
+class Hashtable[T, K]() {
   /*prime number*/
   private var size: Int = 37
 
