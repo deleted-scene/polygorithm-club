@@ -79,8 +79,7 @@ object graphs {
   }
 
 
-  //simple implementation
-
+  //simple adj matrix implementation
   class Vertex(val label: String, isVisited: Boolean = false)
 
   class AdjMatrixGraph(private val numOfVertices: Int) {
